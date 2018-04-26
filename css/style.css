@@ -30,6 +30,11 @@ h2::after {
     height: 2px;
     border-bottom: 2px solid;
 }
+h2 img {
+    float: right;
+    height: 26px;
+    margin-top: 5px;
+}
 
 h3 {
     font-size: 24px;
@@ -42,6 +47,66 @@ p {
     line-height: 1.71;
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid;
+    color: inherit;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-family: inherit;
+}
+textarea {
+    height: 220px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #4BCAFF;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, .6);
+    font-style: italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(255, 255, 255, .6);
+    font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(255, 255, 255, .6);
+    font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: rgba(255, 255, 255, .6);
+    font-style: italic;
 }
 
 
@@ -120,6 +185,24 @@ MODULES
     border-color: #4BCAFF;
 }
 
+.button-icon {
+    width: 64px;
+    line-height: 60px;
+    text-align: center;
+    padding: 0;
+    font-size: 21px;
+    /* padding-left: 0;
+    padding-right: 0; */
+}
+
+.button-group {
+    font-size: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.button-group .button {
+    margin: 0 10px;
+}
 
 
 
@@ -203,7 +286,7 @@ COMPONENTS
 .service-item {
     display: inline-block;
     width: 25%;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     padding: 15px;
 }
 
@@ -264,4 +347,41 @@ COMPONENTS
 .default iframe {
     width: 100%;
     height: 313px;
+}
+
+
+.twitter {
+    background-color: #4BCAFF;
+    color: white;
+}
+.twitter p, 
+.testimonial p {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.7;
+}
+
+.about {
+    color: white;
+    background-image: url('/img/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonial {
+    color: #515F67;
+}
+p.testimonial-author {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4BCAFF;
+}
+
+.contact {
+    color: white;
+    background-image: url('/img/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
